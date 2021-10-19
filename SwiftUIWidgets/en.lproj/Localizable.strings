@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  SwiftUIWidgets
+
+  Created by Dave Brunner on 19.10.21.
+  
+*/
+"title1" = "Hello Widget";
+"inc" = "increment";
+"reset" = "reset";
+"title2" = "What do u want?";
