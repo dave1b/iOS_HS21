@@ -43,10 +43,10 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct MyWidgetEntryView : View {
-    let ud = UserDefaults(suiteName: "groupch.hslu.ios.SwiftUIWidgets")
+    let ud = UserDefaults(suiteName: "group.ch.hslu.ios.SwiftUIWidgets")
     
     //ud.value(counter, forKey: "counter")
-//    var name  = UserDefaults.value(forKey: "selectedIcon")
+    // var name  = ud.value(forKey: "selectedIcon")
    
     //var counter2 = ud.value(forKey: "counter")
     // private var i = userDefaults.integer(forKey: "counter")
@@ -54,9 +54,11 @@ struct MyWidgetEntryView : View {
     
     
     var numberOfClicks: Int?
+    var selectedIcon: String?
     
     init(){
         numberOfClicks = ud?.value(forKey: "counter") as? Int
+        selectedIcon = ud?.value(forKey: "selectedIcon") as? String
     }
     
     
@@ -67,11 +69,10 @@ struct MyWidgetEntryView : View {
     
         
         HStack{
-            
             Text(String("#Clicks:"))
 //            Text("\(print(ud?.value(forKey: "counter")))")
-              Text("\(numberOfClicks ?? -1)")
-         
+              Text("\(numberOfClicks ?? 0)")
+            Text("\(selectedIcon ?? "👾")")
             //Text(any("\(counter2)"))
 //            Text("\(UserDefaults.standard.value(forKey: "counter"))")
 //            Text(String())
@@ -92,6 +93,7 @@ struct MyWidget: Widget {
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
 

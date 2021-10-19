@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C384AF75271F0A1400E1AC3C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C384AF78271F0A1400E1AC3C /* Localizable.strings */; };
+		C384AF76271F0A1400E1AC3C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C384AF78271F0A1400E1AC3C /* Localizable.strings */; };
+		C384AF7C271F0A3000E1AC3C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C384AF7F271F0A3000E1AC3C /* Localizable.strings */; };
+		C384AF7D271F0A3000E1AC3C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C384AF7F271F0A3000E1AC3C /* Localizable.strings */; };
+		C384AF84271F141C00E1AC3C /* MyGlobalValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D63E98271EBA1700F5DCED /* MyGlobalValues.swift */; };
 		C3D63E6F271E971D00F5DCED /* SwiftUIWidgetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D63E6E271E971D00F5DCED /* SwiftUIWidgetsApp.swift */; };
 		C3D63E71271E971D00F5DCED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D63E70271E971D00F5DCED /* ContentView.swift */; };
 		C3D63E73271E971F00F5DCED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D63E72271E971F00F5DCED /* Assets.xcassets */; };
@@ -14,11 +19,11 @@
 		C3D63E7D271E9A8200F5DCED /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D63E7C271E9A8200F5DCED /* HomepageView.swift */; };
 		C3D63E86271EA08500F5DCED /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D63E85271EA08500F5DCED /* WidgetKit.framework */; };
 		C3D63E88271EA08500F5DCED /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D63E87271EA08500F5DCED /* SwiftUI.framework */; };
-		C3D63E8B271EA08500F5DCED /* MyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D63E8A271EA08500F5DCED /* MyWidget.swift */; };
 		C3D63E8D271EA08B00F5DCED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D63E8C271EA08B00F5DCED /* Assets.xcassets */; };
 		C3D63E91271EA08B00F5DCED /* MyWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3D63E83271EA08500F5DCED /* MyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C3D63E99271EBA1700F5DCED /* MyGlobalValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D63E98271EBA1700F5DCED /* MyGlobalValues.swift */; };
 		C3D63E9B271EC6D400F5DCED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D63E9A271EC6D400F5DCED /* Constants.swift */; };
+		C3DC5BE1271F155A00332CFE /* MyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D63E8A271EA08500F5DCED /* MyWidget.swift */; };
+		C3F92DE5271F45B50023658C /* MyGlobalValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D63E98271EBA1700F5DCED /* MyGlobalValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C384AF77271F0A1400E1AC3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C384AF7E271F0A3000E1AC3C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C384AF80271F0F6800E1AC3C /* MyWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyWidgetExtension.entitlements; sourceTree = "<group>"; };
 		C3D63E6B271E971D00F5DCED /* SwiftUIWidgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIWidgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D63E6E271E971D00F5DCED /* SwiftUIWidgetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWidgetsApp.swift; sourceTree = "<group>"; };
 		C3D63E70271E971D00F5DCED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +94,9 @@
 		C3D63E62271E971D00F5DCED = {
 			isa = PBXGroup;
 			children = (
+				C384AF80271F0F6800E1AC3C /* MyWidgetExtension.entitlements */,
+				C384AF78271F0A1400E1AC3C /* Localizable.strings */,
+				C384AF7F271F0A3000E1AC3C /* Localizable.strings */,
 				C3D63E9A271EC6D400F5DCED /* Constants.swift */,
 				C3D63E6D271E971D00F5DCED /* SwiftUIWidgets */,
 				C3D63E89271EA08500F5DCED /* MyWidget */,
@@ -208,6 +219,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = C3D63E62271E971D00F5DCED;
 			productRefGroup = C3D63E6C271E971D00F5DCED /* Products */;
@@ -226,6 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3D63E76271E971F00F5DCED /* Preview Assets.xcassets in Resources */,
+				C384AF7C271F0A3000E1AC3C /* Localizable.strings in Resources */,
+				C384AF75271F0A1400E1AC3C /* Localizable.strings in Resources */,
 				C3D63E73271E971F00F5DCED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +249,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3D63E8D271EA08B00F5DCED /* Assets.xcassets in Resources */,
+				C384AF7D271F0A3000E1AC3C /* Localizable.strings in Resources */,
+				C384AF76271F0A1400E1AC3C /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,8 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C384AF84271F141C00E1AC3C /* MyGlobalValues.swift in Sources */,
 				C3D63E9B271EC6D400F5DCED /* Constants.swift in Sources */,
-				C3D63E99271EBA1700F5DCED /* MyGlobalValues.swift in Sources */,
 				C3D63E7D271E9A8200F5DCED /* HomepageView.swift in Sources */,
 				C3D63E71271E971D00F5DCED /* ContentView.swift in Sources */,
 				C3D63E6F271E971D00F5DCED /* SwiftUIWidgetsApp.swift in Sources */,
@@ -257,7 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3D63E8B271EA08500F5DCED /* MyWidget.swift in Sources */,
+				C3F92DE5271F45B50023658C /* MyGlobalValues.swift in Sources */,
+				C3DC5BE1271F155A00332CFE /* MyWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +287,25 @@
 			targetProxy = C3D63E8F271EA08B00F5DCED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C384AF78271F0A1400E1AC3C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C384AF77271F0A1400E1AC3C /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		C384AF7F271F0A3000E1AC3C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C384AF7E271F0A3000E1AC3C /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C3D63E77271E971F00F5DCED /* Debug */ = {
@@ -457,6 +493,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MyWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9FBLM9P3TQ;
@@ -484,6 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MyWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

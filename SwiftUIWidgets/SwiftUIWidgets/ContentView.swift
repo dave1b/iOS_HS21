@@ -10,11 +10,12 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var constants = MyGlobalValues()
     
+    
     var body: some View {
  
         let steelGray = Color(white: 0.7745)
         VStack(){
-            Text("Hello, Widget").font(.system(size: 45, weight: .bold, design: .default))
+            Text("title1").font(.system(size: 45, weight: .bold, design: .default))
                 .padding()
             Spacer().frame( height:40)
             HStack{
@@ -23,15 +24,14 @@ struct ContentView: View {
             }
             
             HStack{
-            Button("increment"){
+            Button("inc"){
                 constants.counter += 1
             }
             Button("reset"){
                 constants.counter = 0
-                
             }
             }
-            Text("What do you want?").font(.system(size: 30.0)).bold()
+            Text("title2").font(.system(size: 30.0)).bold()
             Picker("", selection:  $constants.selectedIcon){
                 ForEach(constants.iconOptions, id:\.self) {
                     iconName in
