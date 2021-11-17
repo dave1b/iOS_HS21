@@ -22,7 +22,6 @@ class MyGlobalValues: ObservableObject  {
     }
     }
     
-    
     @Published var iconOptions = ["☮️","🎶","🐰","💎"]
     @Published var selectedIcon : String = "☮️"{
         didSet{
